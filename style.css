@@ -5,9 +5,9 @@ html {
 
 body {
     text-align: center;
-    padding: 2rem;
     min-width: 250px;
     background-color: rgb(243, 241, 237);
+    margin: 0;
 }
 
 button {
@@ -60,4 +60,20 @@ p {
 
 .icon {
     width: 30%;
+}
+
+footer {
+    background-color: rgb(22, 22, 22);
+    color: whitesmoke;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    min-width: 250px;
+}
+
+footer a {
+    color: rgba(250, 235, 215, 0.712);
+    text-decoration: none;
+    margin: 0.5rem;
+    display: block;
 }
