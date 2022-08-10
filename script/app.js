@@ -10,7 +10,7 @@ document.querySelector(".scissors").addEventListener("click", function () { play
 function start() {
     computer = options[Math.floor(Math.random() * options.length)]
     if (player === computer) {
-        result = "Draw"
+        result = "Draw!"
     }
     else if (player === "rock" && computer === "paper") {
         result = "You lost!"
@@ -24,5 +24,6 @@ function start() {
     else {
         result = "You won!"
     }
-    document.querySelector(".js-game-text").innerHTML = `<p> Player's choice: ${player}. The choice of the computer: ${computer}. ${result}</p>`
+    document.querySelector(".js-game-text").innerHTML = `<p class="chosen">Player's choice: ${player}<img class="sm-icon" src="./images/${player}.png"></p> 
+    <p class="chosen">The choice of the computer: ${computer}<img class="sm-icon" src="./images/${computer}.png"></p><p class="result">${result}</p>`
 }

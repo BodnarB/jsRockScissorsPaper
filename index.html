@@ -10,34 +10,37 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 
 <body>
-    <h1>Rock paper scissors</h1>
-    <div class="js-game-text game-text">
-        <p>Choose one to start</p>
-    </div>
-    <div class="table">
-        <button class="js-choice rock choice">
-            rock
-            <img class="icon" src="./rock_39413.png" alt="">
-        </button>
-        <button class="js-choice paper choice">
-            paper
-            <img class="icon" src="./paper_38485.png" alt="">
-        </button>
-        <button class="js-choice scissors choice">
-            scissors
-            <img class="icon" src="./scissors_39412.png" alt="">
-        </button>
-    </div>
-    <div class="js-result"></div>
+    <main>
+        <h1>Rock paper scissors</h1>
+        <div class="js-game-text game-text">
+            <p class="start-text">Choose one to start</p>
+        </div>
+        <div class="table">
+            <button class="js-choice rock choice">
+                rock
+                <img class="icon" src="./images/rock.png" alt="">
+            </button>
+            <button class="js-choice paper choice">
+                paper
+                <img class="icon" src="./images/paper.png" alt="">
+            </button>
+            <button class="js-choice scissors choice">
+                scissors
+                <img class="icon" src="./images/scissors.png" alt="">
+            </button>
+        </div>
+        <div class="js-result"></div>
+    </main>
     <footer>
         <a href="https://bodnarb.hu">Boglarka Bodnar &copy;</a>
         <a href="https://github.com/BodnarB">GitHub</a>
     </footer>
-    <script src="./app.js"></script>
+    <script src="./script/app.js"></script>
 </body>
 
 </html>
